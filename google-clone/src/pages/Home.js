@@ -34,7 +34,7 @@ function Home() {
                 alt =""></img>
 
                 <div className='home__inputContainer'>
-                     <Search/>
+                     <Search />
                 </div>
                 
                 </div>
