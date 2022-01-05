@@ -1,29 +1,28 @@
 import React from 'react';
 import './App.css';
 import Home from "./pages/Home";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
-      <h1>Google Clone</h1>
 
-      <div className='home__header'>
+<Router>
 
+  <Switch>
+    <Route path ="/search">
+    <h1>this is the search page</h1>
+    </Route>
 
-      </div>
-
-<div className='home__body'>
-
+    <Route path="/">
+      <Home/>
+    </Route>
   
-</div>
+  </Switch>
 
+</Router>
 
-{ /* home [search] */ }
-<Home/>
-
-
-{ /* Result [results page] */ }
 
     </div>
   );
