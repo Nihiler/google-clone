@@ -8,9 +8,19 @@ function App() {
     <div className="App">
       <h1>Google Clone</h1>
 
+      <div className='home__header'>
+
+
+      </div>
+
+<div className='home__body'>
+
+  
+</div>
+
 
 { /* home [search] */ }
-<home/>
+<Home/>
 
 
 { /* Result [results page] */ }
