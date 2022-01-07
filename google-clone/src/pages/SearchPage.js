@@ -10,6 +10,7 @@ import MapIcon from '@material-ui/icons/Map';
 import MoreIcon from '@material-ui/icons/More';
 import ShopIcon from '@material-ui/icons/LocalOffer';
 import ImageIcon from '@material-ui/icons/Image';
+import imageEngine from "./engine.jpg";
 
 function SearchPage() {
 //https://developers.google.com/custom-search/v1/using_rest
@@ -33,7 +34,8 @@ function SearchPage() {
                 <Link to ="/">
 
                     <img className='searchPage__logo'
-                     src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                    //  src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" GOOGLE LOGO
+                    src= {imageEngine}
                      alt =""/>
 
                 </Link>
@@ -83,7 +85,7 @@ function SearchPage() {
                     </div>
             </div>
 
-                <h1>{term}</h1>
+                {/* <h1>{term}</h1> */}
             </div>
 {true && (
             <div className='searchPage__results'>
@@ -94,8 +96,12 @@ function SearchPage() {
             {data?.items.map(item=>(
 
                     <div className='searchPage__result'>
+                        <a href={item.link}> {item.displayLink}</a>  
+                        <a className='searchPage__resultTitle' href={item.link}>
+                            <h2>{item.title}</h2>
+                        </a>
 
-<a href={item.link}> {item.displayLink}</a>
+                        <p className='searchPage__resultSnippet'>{item.snippet}</p>
                     </div>
 
             ))}

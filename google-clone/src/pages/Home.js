@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import AppsIcon from "@material-ui/icons/Apps";
 import {Avatar} from "@material-ui/core";
 import Search from "../components/Search";
+import imageEngine from "./engine.jpg";
 
 function Home() {
     return (
@@ -19,7 +20,7 @@ function Home() {
                 </div>
 
                 <div className='home__headerRight'>
-                    <Link to='/gmail'>Gmail</Link>
+                    <Link to='/gmail'>Mail</Link>
                     <Link to='/images'>Images</Link>
                     <AppsIcon/>
                     <Avatar/>
@@ -30,7 +31,8 @@ function Home() {
                 <div className='home__body'>
 
                 <img 
-                src ="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                // src ="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" GOOGLE LOGO
+                src= {imageEngine}
                 alt =""></img>
 
                 <div className='home__inputContainer'>

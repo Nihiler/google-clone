@@ -59,4 +59,33 @@
     margin-right: 20px;
 }
 
+.searchPage__result {
+    margin: 40px 0;
+}
 
+.searchPage__resultCount{
+    color: #707577;
+    font-size: 14px;  
+}
+
+.searchPage__results{
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.searchPage__resultTitle{
+    text-decoration: none;
+    color: #3b3b3be5;
+    
+}
+
+.searchPage__resultTitle:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+.searchPage__resultSnippet{
+    margin-top: 10px;
+}
