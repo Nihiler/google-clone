@@ -41,55 +41,41 @@ function SearchPage() {
             <div className='searchPage__headerBody'>
                 <Search hideButtons />
                     <div className='searchPage__options'>
-
                         <div class="searchPage__optionsLeft">
-
                             <div className='searchPage_option'>
                                 <SearchIcon/>
                                 <Link to="/all">All</Link>
                             </div>
-
                             <div className='searchPage_option'>
                                 <DescriptionIcon/>
                                 <Link to="/all">News</Link>
                             </div>
-
                             <div className='searchPage_option'>
                                 <ImageIcon/>
                                 <Link to="/all">Images</Link>
                             </div>
-
                             <div className='searchPage_option'>
                                 <ShopIcon/>
                                 <Link to="/all">Shooping</Link>
                             </div>
-
                             <div className='searchPage_option'>
                                 <MapIcon/>
                                 <Link to="/all">Maps</Link>
                             </div>
-
                             <div className='searchPage_option'>
                                 <MoreIcon/>
                                 <Link to="/all">More</Link>
                             </div>
-
-
                         </div>
-
                         <div class="searchPage__optionsRight">
-
                         <div className='searchPage_option'>
                                
                                 <Link to="/all">Settings</Link>
                             </div>
-
                             <div className='searchPage_option'>
                                 
                                 <Link to="/all">Tools</Link>
                             </div>
-
-
                         </div>
 
 
@@ -99,10 +85,22 @@ function SearchPage() {
 
                 <h1>{term}</h1>
             </div>
-
+{true && (
             <div className='searchPage__results'>
-                
-            </div>            
+                <p className='searchPage__resultCount'>
+
+                    About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime} seconds) for {term}
+                </p>
+            {data?.items.map(item=>(
+
+                    <div className='searchPage__result'>
+
+<a href={item.link}> {item.displayLink}</a>
+                    </div>
+
+            ))}
+
+            </div>   )}         
         </div>
     )
 }
