@@ -1,5 +1,3 @@
-// https://www.youtube.com/watch?v=DAWWf7q8sqM
-//t=
 
 import React from 'react';
 import './App.css';
