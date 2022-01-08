@@ -17,7 +17,7 @@ function SearchPage() {
 
 // https://cse.google.com/cse/create/new
 
-//API KEY = AIzaSyCiCibhrhdNRs8SiDePpdKodnR4TbfbmqU
+
 
     const [{term}, dispatch] = useStateValue();
 
