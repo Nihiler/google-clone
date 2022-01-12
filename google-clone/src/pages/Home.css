@@ -46,3 +46,7 @@ align-items: center;
     object-fit: contain;
     height: 100px;
 }
+
+.gradient{
+background-color: red;
+}
