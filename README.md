@@ -5,4 +5,4 @@ Made with React.
 
 PLEASE REMEMBER TO CHANGE API KEY ON SRC/KEYS.JS
 
-TODO: Deploy in Heroku
+TO DO: Deploy in Heroku
